@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .one { background: #ff9999; padding: 20px;}
+        .one ul { background: #3399ff; padding: 20px;}
+        .one ul li { background: #cce5ff; color: darkblue; margin: 5px;
+        list-style-type: none;}
+    </style>
+</head>
+<body>
+<div class="one">
+    <ul>
+        {% for item in seq %}
+        	<li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>

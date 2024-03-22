@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    h2 {
+        color: antiquewhite;
+    }
+    h3 {
+        color: silver;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h3>Welcome, {{ username }}</h3>
+{% if username != "" %}
+    <h2>Hello, {{ username }}</h2>
+    {% else %}
+    <h2>No Account</h2>
+{% endif %}
+</body>
+</html>

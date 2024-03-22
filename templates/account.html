@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+    Welcome {{ account }}
+</h1>
+<h2>
+    <div>
+        {% if account!="" %}
+        {{ account }}
+        {% else %}
+        No account
+        {% endif %}
+    </div>
+</h2>
+</body>
+</html>
